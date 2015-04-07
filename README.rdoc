@@ -1,0 +1,7 @@
+== README
+
+This app is the main app from the book 'Jump Start Rails' by Andy Hawthorne. Copyright 2013 SitePoint Pty. Ltd. ISBN 978-0-9874674-3-0
+
+Ruby version is 2.2.1, Rails version is 4.2.0
+
+pp 61 add credentials
