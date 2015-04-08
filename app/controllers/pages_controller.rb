@@ -5,6 +5,6 @@ class PagesController < ApplicationController
   private
 
   def pages_params
-    params.require(:title, :slug, :content)
+    params.require(:title, :slug, :content).permit(:blurb)
   end
 end
