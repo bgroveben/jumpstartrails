@@ -5,7 +5,9 @@ This app is the main app from the book 'Jump Start Rails' by Andy Hawthorne. Cop
 Ruby version is 2.2.1, Rails version is 4.2.0, db is Postgresql
 
 
-pp 62 A Little Bit of Planning
+pp 70 Adding a Controller
 
 
 * To get Postgres working: '$ createuser -s -r jumpstartrails' (while server is running). Name, username, and rolename are all jumpstartrails.
+
+* When adding validations to /models/page.rb, the book uses attr_accesible instead of strong parameters. I'll follow the book for now, but I may need to change the code later.
