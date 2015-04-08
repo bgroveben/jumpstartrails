@@ -10,4 +10,4 @@ pp 70 Adding a Controller
 
 * To get Postgres working: '$ createuser -s -r jumpstartrails' (while server is running). Name, username, and rolename are all jumpstartrails.
 
-* When adding validations to /models/page.rb, the book uses attr_accesible instead of strong parameters. I'll follow the book for now, but I may need to change the code later.
+* When adding validations to /models/page.rb, the book uses attr_accesible instead of strong parameters. I'm using strong params -- so there.
