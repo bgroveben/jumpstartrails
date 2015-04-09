@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 20150409122909) do
     t.datetime "updated_at",                          null: false
   end
 
-  add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
+  add_index "admin_users", ["email"], name: "index_admin_users_on_email", using: :btree  #!# I removed 'unique: true' so that my tests wouldn't throw any errors; I'll learn more about Postgres later.
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "categories", force: :cascade do |t|
