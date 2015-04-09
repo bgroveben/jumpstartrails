@@ -1,9 +1,10 @@
 ActiveAdmin.register AdminUser do
-  permit_params :email, :password, :password_confirmation
+  #!# permit_params :email, :password, :password_confirmation
 
   controller do
     def permitted_params
-      params.permit(:user => [:username, :email])
+      #!# params.permit(:admin_user => [:username, :email])
+      params.permit admin_user: [:email, :password, :password_confirmation]
     end
   end
 
