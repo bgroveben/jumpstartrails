@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   resources :pages
   root 'pages#index'
+  %w[about].each do |page|
+    get page, controller: 'pages', action: page 
+  end
 
   #!# get 'pages/index'
   #!# get 'pages' => 'pages#index'
