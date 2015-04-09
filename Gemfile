@@ -30,8 +30,6 @@ gem 'activeadmin', github: 'activeadmin'
 
 gem 'ransack'
 
-gem 'protected_attributes'
-
 gem 'jquery-ui-rails'
 
 # Use ActiveModel has_secure_password
