@@ -5,9 +5,11 @@ This app is the main app from the book 'Jump Start Rails' by Andy Hawthorne. Cop
 Ruby version is 2.2.1, Rails version is 4.2.0, db is Postgresql
 
 
-pp 76 Installing ActiveAdmin
+pp 83 Ch 4 Creating an ActiveAdmin Resource
 
 
 * To get Postgres working: '$ createuser -s -r jumpstartrails' (while server is running). Name, username, and rolename are all jumpstartrails.
 
 * When adding validations to /models/page.rb, the book uses attr_accesible instead of strong parameters. I'm using strong params -- so there.
+
+* ActiveRecord::RecordNotUnique: PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_admin_users_on_email" -- when I run rake test. The PG db needs some work.
