@@ -15,9 +15,28 @@ ActiveAdmin.register_page "Dashboard" do
           column :created_at
         end
         strong { link_to "View All Pages", admin_pages_path }
+        br 
       end
-    end
 
+      columns do
+        column do
+          panel "Recent Posts" do
+            table_for Post.order("created_at desc").limit(5) do
+              column("Title") { |post| link_to(post.title, admin_post_path(post)) }
+              column :created_at
+            end 
+          end
+        end
+
+        column do
+          panel "Info" do
+            para "Welcome to ActiveAdmin."
+          end
+        end      
+      end 
+    end
+  end #!# content
+end
     # Here is an example of a simple dashboard with columns and panels.
     #
     # columns do
@@ -37,5 +56,5 @@ ActiveAdmin.register_page "Dashboard" do
     #     end
     #   end
     # end
-  end # content
-end
+#!#  end # content
+#!# end
