@@ -8,7 +8,7 @@ class PagesController < ApplicationController
 
   private
 
-  def pages_params
-    params.require(:title, :slug, :content).permit(:blurb)
+  def page_params
+    params.require(:page).permit(:title, :slug, :content)
   end
 end
