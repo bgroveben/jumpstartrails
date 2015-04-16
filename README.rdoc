@@ -5,7 +5,7 @@ This app is the main app from the book 'Jump Start Rails' by Andy Hawthorne. Cop
 Ruby version is 2.2.1, Rails version is 4.2.0, db is Postgresql
 
 
-pp 112 Ch 5 top of page, add FriendlyId gem to Gemfile
+pp 113 Ch 5 Managing Metadata
 
 
 * To get Postgres working: '$ createuser -s -r jumpstartrails' (while server is running). Name, username, and rolename are all jumpstartrails.
@@ -13,3 +13,5 @@ pp 112 Ch 5 top of page, add FriendlyId gem to Gemfile
 * When adding validations to /models/page.rb, the book uses attr_accesible instead of strong parameters. I'm using strong params -- so there.
 
 * ActiveRecord::RecordNotUnique: PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_admin_users_on_email" -- when I run rake test. The PG db needs some work. I did a workaround by removing 'unique: true' from the add_index admin users email in schema.rb.
+
+* To get FriendlyID gem to work, use the generate command and migrate the database while the server is not running.
