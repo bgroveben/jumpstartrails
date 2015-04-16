@@ -1,4 +1,5 @@
 ActiveAdmin.register Post do
+  scope :rails
   permit_params :title, :content, :slug, :blurb
 
   index do
