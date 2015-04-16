@@ -33,6 +33,9 @@ gem 'inherited_resources', github: 'josevalim/inherited_resources'
 gem 'ransack',             github: 'ernie/ransack'
 gem 'activeadmin',         github: 'activeadmin'
 
+#!# Add gem for human-readable names in the URL field instead of a number.
+gem 'friendly_id', github: 'FriendlyId/friendly_id'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

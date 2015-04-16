@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/FriendlyId/friendly_id.git
+  revision: 76466a2d94921c813d9df4e7a79f8609902ee884
+  specs:
+    friendly_id (5.1.0)
+      activerecord (>= 4.0.0)
+
+GIT
   remote: git://github.com/activeadmin/activeadmin.git
   revision: 18835fd6a6d4e2aa00f9a4d36ad95831b110f723
   specs:
@@ -235,6 +242,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise!
   formtastic!
+  friendly_id!
   inherited_resources!
   jbuilder (~> 2.0)
   jquery-rails
