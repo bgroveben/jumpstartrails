@@ -36,6 +36,9 @@ gem 'activeadmin',         github: 'activeadmin'
 #!# Add gem for human-readable names in the URL field instead of a number.
 gem 'friendly_id', github: 'FriendlyId/friendly_id'
 
+#!# Add metadata for posts and pages
+gem 'metamagic'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
