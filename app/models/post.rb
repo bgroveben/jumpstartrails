@@ -3,4 +3,5 @@ class Post < ActiveRecord::Base
   scope :rails, -> { where(category_id: 1) }
   extend FriendlyId
   friendly_id :title, :use => [:slugged, :finders]
+  mount_uploader :image, ImageUploader
 end
