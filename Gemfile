@@ -39,6 +39,9 @@ gem 'friendly_id', github: 'FriendlyId/friendly_id'
 #!# Add metadata for posts and pages
 gem 'metamagic'
 
+#!# Upload files
+gem 'carrierwave', '~> 0.10.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
