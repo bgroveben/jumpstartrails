@@ -41,6 +41,8 @@ gem 'metamagic'
 
 #!# Upload files
 gem 'carrierwave', '~> 0.10.0'
+gem 'rmagick', '~> 2.14.0'
+gem 'mini_magick'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
